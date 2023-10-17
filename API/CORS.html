@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test CORS</title>
+
+    <script>
+
+        fetch('http://localhost:8080/list') //realiza requisição
+        . then(products => products.json()) //converte o  valor para json
+        . then(retorno => console.log(retorno)) //exibindo os produtos
+    </script>
+</head>
+<body>
+    <p>hello</p>
+</body>
+</html>
